@@ -1,0 +1,242 @@
+* {
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oxygen";
+}
+
+.clearfix::after, .row::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.button {
+    display: inline-block;
+    padding: 1em 4em;
+    background: #58c4c4;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    transition: background-color ease .8s;
+    background: #37a0a0;
+}
+
+.top-header {
+    text-align: center;
+}
+
+.top-header-logo {
+    margin: .5em;
+}
+
+.top-nav {
+    background: #612674;
+    text-align: center;
+}
+
+.top-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+.top-nav a:hover {
+    transition: background-color linear .375s;
+    background: #7c3792;
+}
+
+.top-content {
+    padding: 1em;
+    text-align: center;
+    background: #f6f6f6;
+}
+
+.top-content-title {
+    color: #612674;
+    font-size: 1.375em;
+    margin: 1.375em;
+}
+
+.top-content-subtitle {
+    color: #a87bb7;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.middle-content {
+    padding: 2em;
+    background: #f6f6f6;
+    text-align: center;
+}
+
+.middle-content p {
+    line-height: 1.5;
+    color: #222;
+}
+
+.middle-content span[class^=icon] { /* estou pegando a span que tem o atributo "class" que começa com a palavra "icon" */
+    font-size: 3.5em;
+    color: #652e78;
+}
+
+.middle-content-title {
+    font-size: 1.25em;
+    color: #652e78;
+    text-transform: uppercase;
+}
+
+.main-content {
+    padding: 2em;
+}
+
+.main-content-article {
+    margin-bottom: 3.5em;
+}
+
+.main-content-title {
+    letter-spacing: .2em;
+    font-size: 1.25em;
+    color: #652e78;
+    text-transform: uppercase;
+}
+
+.main-content-article p {
+    line-height: 1.2;
+}
+
+.footer {
+    background: #25303e;
+    color: #83969f;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.footer-menushare {
+    background: #303d4c;
+    padding: .4em;
+}
+
+.footer-menushare li {
+    display: inline-block;
+    margin: .5em;
+}
+
+.footer-menushare a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-menushare a:hover {
+    transition: linear .3s;
+    color: #83969f;
+}
+
+.hidden {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+
+@media screen and (min-width: 48em) {
+
+    .top-header-logo {
+        float: left;
+    }
+
+    .top-nav {
+        background: transparent;
+        float: right;
+        margin: 1.5em 1.5em 0 0;
+    }
+
+    .top-nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .top-nav li {
+        display: inline-block;
+    }
+
+    .top-nav a {
+        color: #713a84;
+        font-weight: bold;
+    }
+
+    
+    .top-nav a:hover {
+        background: transparent;
+        padding-bottom: .4em;
+        transition: all .4s;
+        color: #a87bb7;
+        border-bottom: 2px solid #7c3792;
+    }
+
+    .top-content {
+        background: #521a66;
+    }
+
+    .top-content-title, .top-content-subtitle {
+        color: white;
+    }
+
+    .col-1_4 {
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    
+    .top-content {
+    /*   
+        background-color: #521a66;
+        background-image: url(../images/bg_topo_1198x670.jpg); 
+    */
+        background:#521a66 url(../images/bg_topo_1198x670.jpg);
+        background-size: cover;
+        height: 15em;
+        padding-top: 10em;
+
+    }
+}
+
+@media screen and (min-width: 90em) {
+    .top-content {
+        background-image: url(../images/bg_topo_1600x1374.jpg);
+        background-position: center top;
+        padding: 15em 20em 10em;
+    }
+
+    .col-1_4 {
+        width: 23%;
+        margin: 1%;
+    }
+
+    .main-content {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 160em) {
+    
+}
+
+
+
+
